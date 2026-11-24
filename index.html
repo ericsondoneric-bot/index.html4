@@ -4,52 +4,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy 2nd Monthsary, Love! 🌷</title>
+<title>For Cristine ❤️</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="flowers">🌸 🌷 🌸</div>
+<!-- FIRST VIEW -->
+<section class="welcome" id="welcome">
 
-<h1>Happy 2nd Monthsary, Love! 💗</h1>
-<p class="subtitle">A little surprise just for you...</p>
+    <div class="flowers">
+        🌸 🌷 🌸
+    </div>
 
-<div class="envelope" onclick="openLetter()">
-    <div class="heart">💗</div>
-    <p>Tap to open 💌</p>
-</div>
+    <h1>For You, My Love</h1>
+    <p>A little surprise made with love 💗</p>
 
-<div class="letter" id="letter">
-    <h2>My Dearest Love 🌷</h2>
+    <div class="bouquet">💐</div>
+
+    <button onclick="showLetter()">
+        Open My Letter 💌
+    </button>
+
+    <div class="flowers bottom">
+        🌷 🌸 🌷
+    </div>
+
+</section>
+
+<!-- SECOND VIEW -->
+<section class="message" id="message">
+
+    <div class="decoration">🌸 💗 🌷</div>
+
+    <h1>Happy 2nd Monthsary,<br>My Love Cristine! ❤️💋</h1>
+
+    <p class="dear">My dearest Cristine,</p>
 
     <p>
-    Happy 2nd Monthsary, love!
-    I'm so happy to have you in my life.
-    Thank you for every smile, every laugh,
-    and every beautiful memory we've shared.
+        Happy 2nd monthsary, mylove! ❤️
+        I just want to say how thankful I am
+        to have you in my life. These past two
+        months have been special because I got
+        to share them with you.
     </p>
 
     <p>
-    We may not be perfect, but I hope we
-    continue to understand each other,
-    support each other, and choose each
-    other every day.
+        Thank you for making me happy, for
+        giving me reasons to smile, and for
+        making ordinary days feel special.
+        I appreciate every little thing you do
+        for me, even the things you think are
+        simple.
     </p>
 
     <p>
-    Two months down, and hopefully many
-    more months and years to come.
+        I know we're not perfect. Sometimes
+        we misunderstand each other, argue,
+        and have difficult days. But I hope
+        we never get tired of understanding
+        one another. Let's keep learning,
+        growing, and becoming better together.
     </p>
 
-    <h3>I love you so much! ❤️</h3>
-    <p>Forever yours. 💗</p>
-</div>
+    <p>
+        I want you to know that you are
+        special to me. I don't need a perfect
+        relationship. I just want a genuine
+        one with you, where we can be honest,
+        communicate, and always appreciate
+        each other.
+    </p>
 
-<p class="footer">Made with love, just for you 🌷</p>
+    <p>
+        I hope this is just the beginning
+        of many more monthsaries together.
+        More memories, more laughter,
+        more adventures, and more beautiful
+        moments with you.
+    </p>
+
+    <p>
+        Thank you for being my love, my
+        happiness, and one of the most
+        beautiful parts of my life.
+    </p>
+
+    <h2>I LOVE YOU SO MUCH, CRISTINE! ❤️💋</h2>
+
+    <p class="ending">
+        Happy 2nd Monthsary to us, mylove! 🌷
+        <br><br>
+        Forever yours. 💗
+    </p>
+
+    <div class="decoration">🌸 🌷 💐 🌸</div>
+
+    <button onclick="goBack()">Back to flowers 🌷</button>
+
+</section>
 
 <script>
-function openLetter() {
-    document.getElementById("letter").classList.toggle("show");
+function showLetter() {
+    document.getElementById("welcome").style.display = "none";
+    document.getElementById("message").style.display = "block";
+    window.scrollTo(0, 0);
+}
+
+function goBack() {
+    document.getElementById("message").style.display = "none";
+    document.getElementById("welcome").style.display = "flex";
+    window.scrollTo(0, 0);
 }
 </script>
 
