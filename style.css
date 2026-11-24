@@ -4,87 +4,118 @@
 }
 
 body {
-    background: linear-gradient(135deg, #ffe0eb, #fff5f8, #ffc8dc);
-    font-family: Georgia, serif;
-    text-align: center;
-    min-height: 100vh;
     margin: 0;
-    padding: 25px 15px;
-    color: #a83f69;
+    font-family: Georgia, serif;
+    background: #ffe8f0;
+    color: #a74369;
+}
+
+.welcome {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(
+        135deg,
+        #ffe0ec,
+        #fff5f8,
+        #ffc8dc
+    );
 }
 
 .flowers {
     font-size: 35px;
-    margin: 20px;
     animation: float 3s infinite ease-in-out;
 }
 
 h1 {
-    color: #df5b8a;
-    font-size: 29px;
+    color: #db5b88;
+    font-size: 30px;
+    line-height: 1.4;
 }
 
-.subtitle {
-    color: #a65b78;
+.bouquet {
+    font-size: 100px;
+    margin: 20px;
+    animation: float 3s infinite ease-in-out;
 }
 
-.envelope {
-    background: #f28caf;
-    max-width: 250px;
-    margin: 45px auto;
-    padding: 25px;
-    border-radius: 18px;
+button {
+    border: none;
+    background: #e879a0;
     color: white;
+    padding: 15px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: Georgia, serif;
     cursor: pointer;
-    box-shadow: 0 8px 20px #e9a1ba;
+    box-shadow: 0 5px 15px #e9a6bd;
+    margin: 20px 0;
 }
 
-.heart {
-    font-size: 55px;
-    animation: beat 1s infinite;
+button:active {
+    transform: scale(.95);
 }
 
-.letter {
+.bottom {
+    margin-top: 35px;
+}
+
+.message {
     display: none;
-    max-width: 380px;
-    margin: 20px auto;
-    padding: 25px;
-    background: #fffafd;
-    border: 2px solid #f4b6cc;
-    border-radius: 20px;
-    line-height: 1.8;
-    box-shadow: 0 8px 25px #e8a8bd;
+    min-height: 100vh;
+    padding: 30px 22px;
+    background: linear-gradient(
+        135deg,
+        #fff0f5,
+        #ffe0eb,
+        #fff7fa
+    );
+    text-align: center;
 }
 
-.letter.show {
-    display: block;
-    animation: appear 1s ease;
+.message h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
 }
 
-h2, h3 {
-    color: #df5b8a;
+.message p {
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: justify;
+    color: #85445e;
+    margin-bottom: 22px;
 }
 
-.footer {
-    margin-top: 40px;
+.message .dear {
+    font-weight: bold;
+    color: #d65383;
+}
+
+.message h2 {
+    color: #d94e82;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+.message .ending {
+    text-align: center;
     font-style: italic;
 }
 
-@keyframes beat {
-    50% { transform: scale(1.2); }
+.decoration {
+    font-size: 30px;
+    margin: 20px;
 }
 
 @keyframes float {
-    50% { transform: translateY(-10px); }
-}
-
-@keyframes appear {
-    from {
-        opacity: 0;
-        transform: translateY(25px);
-    }
-    to {
-        opacity: 1;
+    0%, 100% {
         transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
     }
 }
